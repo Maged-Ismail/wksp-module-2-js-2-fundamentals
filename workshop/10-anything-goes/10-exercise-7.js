@@ -13,7 +13,11 @@
 
 function map(lst, func) {
     // lst is an array and func is a function
-
+    let ne =[];
+    for(let i=0; i<lst.length; i++){
+        ne.push(func(lst[i]));
+    }
+    return ne;
 }
 // -------------------------------------------------------------------------
 function charCount(str) { return str.length };

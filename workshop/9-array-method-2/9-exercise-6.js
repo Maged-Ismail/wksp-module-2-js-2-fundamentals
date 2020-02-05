@@ -9,7 +9,11 @@
 
 function greet(lst) {
     // lst is an array of strings
-
+    const ne =[];
+    lst.forEach(function(name){
+        ne.push("Hello "+ name);
+    })
+    return ne;
 }
 // -------------------------------------------------------------------------
 console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));

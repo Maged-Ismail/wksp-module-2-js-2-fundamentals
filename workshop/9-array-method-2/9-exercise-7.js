@@ -10,7 +10,13 @@
   
 function greetLong(lst) {
     // lst is an array of strings
-
+    let ne = lst.filter(function (x){
+        return x.length>3;
+    })
+    ne.forEach(function (x){
+        ne[x] = "Hello "+ x; 
+    })
+    return ne;
 }
 // -------------------------------------------------------------------------
 console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));
